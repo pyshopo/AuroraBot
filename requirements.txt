@@ -1,0 +1,7 @@
+SpeechRecognition
+PyAudio
+gTTS
+google-generativeai
+psutil
+requests
+pywhatkit

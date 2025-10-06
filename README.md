@@ -69,7 +69,7 @@ python3 main.py
 Aura se iniciará y estará lista para recibir la orden "Hola, Aura".
 
 ---
-## 🐳¡ (Opcional) Ejecución con Docker
+## (Opcional) Ejecución con Docker
 Si tienes problemas con tu entorno local de Python, puedes usar Docker para una ejecución garantizada y aislada.
 
 1.  **Construye la imagen de Docker:**

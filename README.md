@@ -1,83 +1,277 @@
-# PupusasBot
+# 🎯 Aura - Asistente de IA con Voz
 
-# Asistente de IA "Aura" 
+Asistente inteligente multiplataforma con reconocimiento de voz, síntesis de voz e integración con OpenRouter (DeepSeek y otros modelos).
 
-**Aura** es un asistente de voz personal y modular escrito en Python, impulsado por la IA generativa de Google Gemini. Está diseñado para ser fácil de entender, modificar y expandir.
+## ✨ Características
 
-##  Características Principales
-* **Control por Voz:** Se activa con la palabra clave "Hola, Aura".
-* **IA Conversacional:** Capaz de mantener conversaciones, contar chistes, dar consejos y responder preguntas generales.
-* **Control del Sistema:** Abre aplicaciones, ajusta el volumen y gestiona la papelera de reciclaje.
-* **Búsquedas Web:** Realiza búsquedas en Google, YouTube y consulta el clima.
-* **Arquitectura Modular:** El código está separado en módulos lógicos (`cerebro`, `web`, `sistema`) para facilitar su mantenimiento.
+- 🎤 **Reconocimiento de voz** en español
+- 🔊 **Síntesis de voz** con gTTS
+- 🧠 **IA avanzada** vía OpenRouter (DeepSeek, Llama, GPT y más)
+- 💬 **Interfaz gráfica** moderna con PySide6
+- 🖥️ **Control de aplicaciones** del sistema
+- 🌐 **Navegación web** y búsquedas en Google
+- 🐧🪟🍎 **Multiplataforma** (Linux, Windows, macOS)
 
----
-##  Requisitos Previos
+## 🚀 Instalación Rápida
 
-Antes de empezar, debes tener lo siguiente:
+### 1. Clonar el repositorio
 
-* **Python:** Versión 3.10 o superior.
-* **Dependencias de Sistema (para Debian/Ubuntu):**
-    ```bash
-    sudo apt update && sudo apt install mpg123 alsa-utils kfind trash-cli portaudio19-dev -y
-    ```
-
----
-## Instalación y Configuración
-
-Sigue estos pasos para poner a Aura en funcionamiento.
-
-### 1. Clona el Repositorio
 ```bash
-git clone [https://github.com/tu-usuario/Asistente_Aura.git](https://github.com/tu-usuario/Asistente_Aura.git)
-cd Asistente_Aura
+git clone https://github.com/tuusuario/aura-assistant.git
+cd aura-assistant
 ```
 
-### 2. Crea y Activa el Entorno Virtual
+### 2. Crear entorno virtual
+
 ```bash
-python3 -m venv entorno
-source entorno/bin/activate
+python -m venv .venv
+
+# Linux/macOS
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
 ```
 
-### 3. Instala las Librerías de Python
-Instala todas las dependencias necesarias con el archivo
-`requirement.txt`.
+### 3. Instalar dependencias
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Configura tu Clave API
-El "cerebro" de Aura necesita una clave API de Google Gemini.
-
-1.  Obtén tu clave gratuita desde **[Google AI Studio](https://aistudio.google.com/app/apikey)**.
-2.  Abre el archivo `cerebro_ia.py`.
-3.  Pega tu clave en la variable `API_KEY`:
-
-    ```python
-    API_KEY = 'TU_API_KEY'
-    ```
-
----
-##  Cómo Ejecutar a Aura
-
-Con el entorno virtual activado, simplemente ejecuta el archivo principal:
-
+**Nota para Linux:**
 ```bash
-python3 main.py
+sudo apt-get install portaudio19-dev python3-pyaudio mpg123
 ```
 
-Aura se iniciará y estará lista para recibir la orden "Hola, Aura".
+**Nota para macOS:**
+```bash
+brew install portaudio
+```
+
+### 4. Configurar API de OpenRouter
+
+```bash
+# Copiar archivo de ejemplo
+cp .env.example .env
+
+# Editar .env y agregar tu API key
+nano .env  # o usa tu editor favorito
+```
+
+Obtén tu API key GRATIS (con $1 de crédito) en: https://openrouter.ai/
+
+### 5. Ejecutar
+
+```bash
+# Interfaz gráfica (recomendado)
+python run.py
+
+# Modo terminal
+python run.py --terminal
+
+# Tests
+python run.py --test
+```
+
+## 💰 Costos de OpenRouter
+
+- **DeepSeek**: ~$0.14 por millón de tokens (MUY BARATO)
+- Con **$1 puedes tener miles de conversaciones**
+- También hay **modelos GRATIS** disponibles
+
+### Modelos recomendados:
+
+```bash
+# En tu .env, elige uno:
+
+# Muy barato y bueno
+OPENROUTER_MODEL=deepseek/deepseek-chat
+
+# Gratis
+OPENROUTER_MODEL=meta-llama/llama-3.1-8b-instruct:free
+OPENROUTER_MODEL=google/gemma-2-9b-it:free
+```
+
+## 📖 Uso
+
+### Interfaz Gráfica
+
+```bash
+python run.py
+```
+
+Elige entre:
+- **Modo Chat**: Escribe o habla tus mensajes
+- **Modo Voz**: Conversación continua por voz
+
+### Modo Terminal
+
+```bash
+python run.py --terminal
+```
+
+### Comandos de voz disponibles:
+
+#### 📂 Abrir aplicaciones:
+- "Abre Firefox"
+- "Abre la calculadora"
+- "Abre Visual Studio Code"
+
+#### 🌐 Navegación web:
+- "Abre YouTube"
+- "Abre Google"
+- "Busca recetas de pasta"
+
+#### 💬 Conversación con IA:
+- "Hola, ¿cómo estás?"
+- "Explícame qué es Python"
+- "Cuéntame un chiste"
+
+#### 🚪 Salir:
+- "Adiós"
+- "Termina"
+- "Salir"
+
+## 🗂️ Estructura del Proyecto
+
+```
+aura-assistant/
+├── config/
+│   ├── __init__.py
+│   ├── openrouter_client.py  # Cliente OpenRouter
+│   └── settings.py            # Configuración general
+├── src/
+│   ├── __init__.py
+│   ├── cerebro_ia.py          # Lógica de IA
+│   ├── habilidades_sistema.py # Control de aplicaciones
+│   ├── habilidades_web.py     # Navegación web
+│   ├── interfaz.py            # Interfaz gráfica
+│   └── main.py                # Motor principal
+├── logs/                      # Logs de la aplicación
+├── .env                       # Configuración (NO subir a git)
+├── .env.example               # Plantilla de configuración
+├── .gitignore
+├── requirements.txt
+├── run.py                     # Punto de entrada
+└── README.md
+```
+
+## ⚙️ Configuración Avanzada
+
+### Cambiar el modelo de IA
+
+Edita `.env`:
+```bash
+OPENROUTER_MODEL=deepseek/deepseek-chat
+```
+
+### Habilitar Selenium (navegación avanzada)
+
+```bash
+# En .env
+USE_SELENIUM=true
+
+# Instalar dependencias
+pip install selenium webdriver-manager
+```
+
+### Agregar programas personalizados
+
+Edita `config/settings.py` en la sección `PROGRAMAS_CONFIG`.
+
+### Agregar atajos web personalizados
+
+Edita `config/settings.py` en la sección `WEB_SHORTCUTS`.
+
+## 🐛 Solución de Problemas
+
+### PyAudio no se instala
+
+**Windows:**
+```bash
+pip install pipwin
+pipwin install pyaudio
+```
+
+**macOS:**
+```bash
+brew install portaudio
+pip install pyaudio
+```
+
+**Linux:**
+```bash
+sudo apt-get install portaudio19-dev python3-pyaudio
+pip install pyaudio
+```
+
+### Error "No se encontró reproductor de audio" (Linux)
+
+```bash
+# Instalar reproductores
+sudo apt-get install mpg123 ffmpeg vlc
+```
+
+### Error con el micrófono
+
+1. Verifica que el micrófono esté conectado
+2. Comprueba los permisos de audio
+3. Linux: `sudo usermod -a -G audio $USER`
+
+### La IA no responde
+
+1. Verifica tu API key en `.env`
+2. Comprueba tu conexión a internet
+3. Revisa los logs en `logs/aura.log`
+
+## 🔧 Desarrollo
+
+### Ejecutar tests
+
+```bash
+python run.py --test
+```
+
+### Ver logs
+
+```bash
+tail -f logs/aura.log
+```
+
+### Modo debug
+
+```bash
+# En .env
+LOG_LEVEL=DEBUG
+```
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT.
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas! Por favor:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📧 Contacto
+
+Si tienes preguntas o sugerencias, abre un issue en GitHub.
+
+## 🙏 Agradecimientos
+
+- [OpenRouter](https://openrouter.ai/) - API de acceso a múltiples modelos de IA
+- [DeepSeek](https://www.deepseek.com/) - Modelo de IA eficiente y económico
+- [PySide6](https://www.qt.io/qt-for-python) - Framework de interfaz gráfica
+- [gTTS](https://github.com/pndurette/gTTS) - Síntesis de voz
+- [SpeechRecognition](https://github.com/Uberi/speech_recognition) - Reconocimiento de voz
 
 ---
-## (Opcional) Ejecución con Docker
-Si tienes problemas con tu entorno local de Python, puedes usar Docker para una ejecución garantizada y aislada.
 
-1.  **Construye la imagen de Docker:**
-    ```bash
-    docker build -t aura-asistente .
-    ```
-2.  **Ejecuta el contenedor:**
-    ```bash
-    docker run -it --rm --device /dev/snd aura-asistente
-    ```
-*Asegúrate de tener el `Dockerfile` y `requirements.txt` en el directorio del proyecto y tu clave API configurada antes de construir la imagen.*
+⭐ Si te gusta este proyecto, dale una estrella en GitHub!

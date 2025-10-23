@@ -1,0 +1,135 @@
+2025-10-21 09:54:04,425 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-21 09:54:04,435 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-21 09:54:04,435 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-21 09:54:04,463 - __main__ - ERROR - Error fatal: expected an indented block after function definition on line 465 (interfaz.py, line 466)
+Traceback (most recent call last):
+  File "/home/pysho/aura-assistant/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/pysho/aura-assistant/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/pysho/aura-assistant/src/interfaz.py", line 466
+    #
+     ^
+IndentationError: expected an indented block after function definition on line 465
+2025-10-22 19:43:21,216 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:43:21,222 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:43:21,222 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:43:21,241 - __main__ - ERROR - Error fatal: expected an indented block after function definition on line 465 (interfaz.py, line 466)
+Traceback (most recent call last):
+  File "/home/pysho/aura-assistant/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/pysho/aura-assistant/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/pysho/aura-assistant/src/interfaz.py", line 466
+    #
+     ^
+IndentationError: expected an indented block after function definition on line 465
+2025-10-22 19:46:39,251 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:46:39,257 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:46:39,257 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:46:39,275 - __main__ - ERROR - Error fatal: expected an indented block after function definition on line 465 (interfaz.py, line 466)
+Traceback (most recent call last):
+  File "/home/pysho/aura-assistant/run.py", line 202, in main
+    modo_interfaz()
+  File "/home/pysho/aura-assistant/run.py", line 113, in modo_interfaz
+    from src.interfaz import main
+  File "/home/pysho/aura-assistant/src/interfaz.py", line 466
+    #
+     ^
+IndentationError: expected an indented block after function definition on line 465
+2025-10-22 19:47:08,097 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:47:08,106 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:47:08,106 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:47:38,645 - src.cerebro_ia - INFO - Generando respuesta para: cuál es la capital de francia...
+2025-10-22 19:47:40,071 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:47:41,238 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 19:50:27,259 - src.cerebro_ia - INFO - Generando respuesta para: como se llama el cantante español que murio hace p...
+2025-10-22 19:50:27,811 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:50:31,090 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 19:52:09,858 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 19:52:09,863 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 19:52:09,863 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 19:52:27,942 - src.cerebro_ia - INFO - Generando respuesta para: cómo se llama jungkook...
+2025-10-22 19:52:32,646 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:52:37,165 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 19:58:58,545 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 19:58:59,387 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 19:59:00,000 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:11:55,277 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:11:55,284 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:11:55,284 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:12:01,139 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:12:02,630 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:12:10,915 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:12:36,562 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:12:37,138 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-22 20:12:37,140 - src.cerebro_ia - ERROR - Error al generar respuesta: Error al generar respuesta: Error code: 401 - {'error': {'message': 'User not found.', 'code': 401}}
+2025-10-22 20:12:52,462 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:12:52,467 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:12:52,467 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:12:57,275 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:12:58,235 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-10-22 20:12:58,238 - src.cerebro_ia - ERROR - Error al generar respuesta: Error al generar respuesta: Error code: 401 - {'error': {'message': 'User not found.', 'code': 401}}
+2025-10-22 20:13:34,428 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:13:34,433 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:13:34,433 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:13:40,841 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:13:42,061 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:13:43,203 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:14:57,382 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:14:57,387 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:14:57,388 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:15:01,485 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:15:03,571 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:15:04,513 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:18:00,276 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:18:00,282 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:18:00,282 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:19:25,949 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:19:25,954 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:19:25,954 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:19:34,200 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:19:35,443 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:19:36,805 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:29:10,093 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:29:10,099 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:29:10,099 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:29:14,285 - src.cerebro_ia - INFO - Generando respuesta para: hola...
+2025-10-22 20:29:15,421 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:29:16,158 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:29:42,418 - src.cerebro_ia - INFO - Generando respuesta para: te gusta el pito...
+2025-10-22 20:29:43,272 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:29:44,911 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:30:06,984 - src.cerebro_ia - INFO - Generando respuesta para: dime que pais es el mas caro del mundo...
+2025-10-22 20:30:07,540 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:30:32,736 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-22 20:30:32,742 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-22 20:30:32,742 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-22 20:31:11,200 - src.cerebro_ia - INFO - Generando respuesta para: cuantas especialiades tiene el intistuto ancional ...
+2025-10-22 20:31:13,075 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:31:16,572 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:31:42,844 - src.cerebro_ia - INFO - Generando respuesta para: o que especialidades tiene exactamente...
+2025-10-22 20:31:44,511 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:31:50,140 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-22 20:32:15,748 - src.cerebro_ia - INFO - Generando respuesta para: cuál es la capital de francia...
+2025-10-22 20:32:16,561 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-22 20:32:17,893 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:07:43,815 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 07:07:43,842 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 07:07:43,842 - __main__ - INFO - Iniciando interfaz gráfica
+2025-10-23 07:07:53,843 - src.cerebro_ia - INFO - Generando respuesta para: sexo...
+2025-10-23 07:07:56,168 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:08:00,288 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:08:36,392 - src.cerebro_ia - INFO - Generando respuesta para: que especialidades tiene el insituto naional tecni...
+2025-10-23 07:08:38,050 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:08:43,895 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:09:20,669 - src.cerebro_ia - INFO - Generando respuesta para: quie en ozzy...
+2025-10-23 07:09:22,084 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:09:24,759 - src.cerebro_ia - INFO - Respuesta generada exitosamente
+2025-10-23 07:09:33,725 - src.cerebro_ia - INFO - Generando respuesta para: quien en ozzy...
+2025-10-23 07:09:34,576 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:09:41,154 - src.cerebro_ia - INFO - Generando respuesta para: quien en ozzy...
+2025-10-23 07:09:42,165 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-23 07:11:32,125 - __main__ - INFO - ✅ Todas las dependencias están instaladas
+2025-10-23 07:11:32,131 - __main__ - INFO - ✅ Configuración de API verificada
+2025-10-23 07:11:32,131 - __main__ - INFO - Iniciando interfaz gráfica
